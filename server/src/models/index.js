@@ -1,0 +1,20 @@
+// รวมโมเดลทั้งหมดไว้ที่เดียว
+module.exports = {
+  User: require('./User'),
+  StudentRegistry: require('./StudentRegistry'),
+  Group: require('./Group'),
+  Membership: require('./Membership'),
+  Enrollment: require('./Enrollment'),
+  Post: require('./Post'),
+  Comment: require('./Comment'),
+  Like: require('./Like'),
+  Follow: require('./Follow'),
+  Block: require('./Block'),
+  Notification: require('./Notification'),
+  Announcement: require('./Announcement'),
+  Assignment: require('./Assignment'),
+  Submission: require('./Submission'),
+  Report: require('./Report'),
+  Conversation: require('./Conversation'),
+  Message: require('./Message'),
+};

@@ -1,0 +1,330 @@
+[
+  {
+    "studentId": "660911001",
+    "fullName": "สมชาย ใจดี",
+    "birthDate": "2003-08-21",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911002",
+    "fullName": "พิมพ์ชนก ชัยมงคล",
+    "birthDate": "2003-11-23",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911003",
+    "fullName": "อรรถพล รักเรียน",
+    "birthDate": "2004-04-06",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "660911004",
+    "fullName": "ปวีณา สายสุวรรณ",
+    "birthDate": "2003-09-17",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911005",
+    "fullName": "กิตติพงศ์ สมบูรณ์",
+    "birthDate": "2004-02-28",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911006",
+    "fullName": "อมรรัตน์ สุขสันต์",
+    "birthDate": "2003-07-11",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911007",
+    "fullName": "มณีรัตน์ วงศ์ใหญ่",
+    "birthDate": "2004-12-22",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911008",
+    "fullName": "นพดล เพชรรัตน์",
+    "birthDate": "2003-05-05",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "660911009",
+    "fullName": "จิราพร มีสุข",
+    "birthDate": "2004-10-16",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911010",
+    "fullName": "สมชาย พึ่งบุญ",
+    "birthDate": "2003-03-27",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911011",
+    "fullName": "นภัส คงคา",
+    "birthDate": "2004-08-10",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911012",
+    "fullName": "พิมพ์ชนก ศรีสว่าง",
+    "birthDate": "2003-01-21",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "660911085",
+    "fullName": "ธีรภัทร ใจกล้า",
+    "birthDate": "2004-05-14",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911001",
+    "fullName": "อรรถพล จันทร์เพ็ญ",
+    "birthDate": "2005-06-04",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "670911002",
+    "fullName": "ปวีณา อินทร์แก้ว",
+    "birthDate": "2004-11-15",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911003",
+    "fullName": "กิตติพงศ์ แก้วมณี",
+    "birthDate": "2005-04-26",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911004",
+    "fullName": "อมรรัตน์ ดวงดี",
+    "birthDate": "2004-09-09",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911005",
+    "fullName": "มณีรัตน์ ใจกล้า",
+    "birthDate": "2005-02-20",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911006",
+    "fullName": "นพดล ทองดี",
+    "birthDate": "2004-07-03",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "670911007",
+    "fullName": "จิราพร เรืองศรี",
+    "birthDate": "2005-12-14",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911008",
+    "fullName": "สมชาย ใจดี",
+    "birthDate": "2004-05-25",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911009",
+    "fullName": "นภัส บุญมา",
+    "birthDate": "2005-10-08",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "670911010",
+    "fullName": "พิมพ์ชนก ชัยมงคล",
+    "birthDate": "2004-03-19",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911001",
+    "fullName": "อรรถพล รักเรียน",
+    "birthDate": "2006-08-02",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "680911002",
+    "fullName": "ปวีณา สายสุวรรณ",
+    "birthDate": "2005-01-13",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911003",
+    "fullName": "กิตติพงศ์ สมบูรณ์",
+    "birthDate": "2006-06-24",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911004",
+    "fullName": "อมรรัตน์ สุขสันต์",
+    "birthDate": "2005-11-07",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911005",
+    "fullName": "มณีรัตน์ วงศ์ใหญ่",
+    "birthDate": "2006-04-18",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911006",
+    "fullName": "นพดล เพชรรัตน์",
+    "birthDate": "2005-09-01",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "student"
+  },
+  {
+    "studentId": "680911007",
+    "fullName": "จิราพร มีสุข",
+    "birthDate": "2006-02-12",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "student"
+  },
+  {
+    "studentId": "680911008",
+    "fullName": "สมชาย พึ่งบุญ",
+    "birthDate": "2005-07-23",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "student"
+  },
+  {
+    "studentId": "620911001",
+    "fullName": "นภัส คงคา",
+    "birthDate": "2001-12-06",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "620911002",
+    "fullName": "พิมพ์ชนก ศรีสว่าง",
+    "birthDate": "2000-05-17",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "620911003",
+    "fullName": "อรรถพล จันทร์เพ็ญ",
+    "birthDate": "2001-10-28",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "alumni"
+  },
+  {
+    "studentId": "620911004",
+    "fullName": "ปวีณา อินทร์แก้ว",
+    "birthDate": "2000-03-11",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "620911005",
+    "fullName": "กิตติพงศ์ แก้วมณี",
+    "birthDate": "2001-08-22",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "620911006",
+    "fullName": "อมรรัตน์ ดวงดี",
+    "birthDate": "2000-01-05",
+    "faculty": "คณะวิศวกรรมศาสตร์และเทคโนโลยีอุตสาหกรรม",
+    "major": "วิศวกรรมคอมพิวเตอร์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "630911001",
+    "fullName": "มณีรัตน์ ใจกล้า",
+    "birthDate": "2002-06-16",
+    "faculty": "คณะมัณฑนศิลป์",
+    "major": "นิเทศศิลป์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "630911002",
+    "fullName": "นพดล ทองดี",
+    "birthDate": "2001-11-27",
+    "faculty": "คณะอักษรศาสตร์",
+    "major": "ภาษาอังกฤษ",
+    "status": "alumni"
+  },
+  {
+    "studentId": "630911003",
+    "fullName": "จิราพร เรืองศรี",
+    "birthDate": "2002-04-10",
+    "faculty": "คณะสถาปัตยกรรมศาสตร์",
+    "major": "สถาปัตยกรรมศาสตร์",
+    "status": "alumni"
+  },
+  {
+    "studentId": "630911004",
+    "fullName": "สมชาย ใจดี",
+    "birthDate": "2001-09-21",
+    "faculty": "คณะวิทยาศาสตร์",
+    "major": "วิทยาการคอมพิวเตอร์",
+    "status": "alumni"
+  }
+]

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>จัดการวิชา - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container container-wide">
+    <div class="page-head"><h1>จัดการวิชา</h1><button class="btn btn-sm" id="new-course" type="button">เพิ่มวิชา</button></div>
+    <p id="message" class="alert" role="alert"></p>
+    <form id="course-form" class="card hidden" novalidate>
+      <h2 id="form-title">เพิ่มวิชา</h2>
+      <div class="two-col">
+        <div class="field"><label for="f-code">รหัสวิชา</label><input type="text" id="f-code" maxlength="12" placeholder="CS101"></div>
+        <div class="field"><label for="f-section">กลุ่มเรียน</label><input type="text" id="f-section" maxlength="5" value="1"></div>
+      </div>
+      <div class="field"><label for="f-name">ชื่อวิชา</label><input type="text" id="f-name" maxlength="80"></div>
+      <div class="two-col">
+        <div class="field"><label for="f-semester">ภาคเรียน</label><input type="text" id="f-semester" maxlength="6" placeholder="1/2569"></div>
+        <div class="field"><label for="f-credits">หน่วยกิต</label><input type="text" id="f-credits" maxlength="2" value="3"></div>
+      </div>
+      <div class="field"><label for="f-desc">คำอธิบาย</label><textarea id="f-desc" rows="2" maxlength="500"></textarea></div>
+      <div class="field"><label for="f-teacher-q">อาจารย์ผู้สอน (ค้นหาจากชื่อหรือ username แล้วกดเลือก ได้ไม่เกิน 5 คน)</label>
+        <div id="f-teachers" class="chips"></div>
+        <div class="picker">
+          <input type="search" id="f-teacher-q" placeholder="พิมพ์ชื่ออาจารย์..." autocomplete="off">
+          <div id="f-teacher-results" class="picker-results hidden" role="listbox"></div>
+        </div>
+        <span class="hint">แสดงเฉพาะอาจารย์ที่แอดมินอนุมัติแล้ว</span></div>
+      <div class="field"><label>เวลาเรียน</label><div id="f-schedule"></div>
+        <span class="hint">ระบุห้องเรียนในแต่ละช่วงเวลา เช่น ท.139 · ห้องเดียวกันหรืออาจารย์คนเดียวกันเรียนซ้อนเวลากันไม่ได้</span></div>
+      <p id="form-message" class="alert" role="alert"></p>
+      <div class="row-actions">
+        <button class="btn btn-sm" type="submit">บันทึก</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="cancel-form">ยกเลิก</button>
+      </div>
+    </form>
+    <section id="enroll-card" class="card hidden">
+      <h2 id="enroll-title">ลงทะเบียนนักศึกษา</h2>
+      <div class="field"><label for="enroll-ids">รหัสนักศึกษา (คั่นด้วยเว้นวรรค จุลภาค หรือขึ้นบรรทัดใหม่)</label>
+        <textarea id="enroll-ids" rows="3" placeholder="660911001 660911002"></textarea></div>
+      <p id="enroll-message" class="alert" role="alert"></p>
+      <div class="row-actions"><button class="btn btn-sm" id="enroll-btn" type="button">เพิ่มนักศึกษา</button>
+        <button class="btn btn-ghost btn-sm" id="enroll-close" type="button">ปิด</button></div>
+      <div class="table-wrap"><table class="table"><thead><tr><th>รหัส</th><th>ชื่อ</th><th>บัญชี</th><th></th></tr></thead>
+        <tbody id="enroll-list"></tbody></table></div>
+    </section>
+    <div class="card table-wrap"><table class="table"><thead><tr><th>วิชา</th><th>ภาคเรียน</th><th>อาจารย์</th><th>เวลาเรียน</th><th>ลงทะเบียน</th><th></th></tr></thead>
+      <tbody id="course-rows"></tbody></table></div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/scheduleEditor.js"></script>
+  <script src="/js/pages/admin-courses.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>ตารางเรียน - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container container-wide">
+    <div class="page-head">
+      <h1>ตารางเรียนของฉัน</h1>
+      <div class="tt-controls">
+        <select id="semester" aria-label="ภาคเรียน"></select>
+        <div class="seg" role="group" aria-label="รูปแบบการแสดงผล">
+          <button type="button" data-view="grid" aria-pressed="true">ตาราง</button>
+          <button type="button" data-view="list" aria-pressed="false">รายการ</button>
+        </div>
+      </div>
+    </div>
+    <p id="message" class="alert" role="alert"></p>
+    <div id="timetable" class="timetable-grid"></div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/scheduleEditor.js"></script>
+  <script src="/js/pages/timetable.js"></script>
+</body>
+</html>

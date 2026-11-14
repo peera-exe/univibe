@@ -1,0 +1,39 @@
+/* ตัวแปรสีของ UniVibe: สีหลัก #007a6d (สีประจำมหาวิทยาลัยศิลปากร) + สีรองจากโลโก้ */
+:root {
+  --primary: #007a6d;
+  --primary-hover: #005f55;
+  --primary-text: #007a6d;      /* สีลิงก์/ข้อความเน้นบนพื้นหลัง */
+  --on-primary: #ffffff;
+  --accent: #96e4c4;
+  --bg: #fafbfa;
+  --surface: #ffffff;
+  --surface-2: #f0f4f2;
+  --text: #16211f;
+  --muted: #5a6c69;
+  --border: #e2e9e6;
+  --danger: #c62828;
+  --shadow: none;
+  --radius: 10px;
+  --radius-lg: 14px;
+  --ring: 0 0 0 3px rgba(0, 122, 109, 0.2);
+  --logo-bg: transparent;
+  color-scheme: light;
+}
+
+:root[data-theme="dark"] {
+  --primary: #007a6d;
+  --primary-hover: #0a9585;
+  --primary-text: #5fd3c0;
+  --accent: #96e4c4;
+  --bg: #0f1a1d;
+  --surface: #142226;
+  --surface-2: #1b2d32;
+  --text: #e3efec;
+  --muted: #9ab3ae;
+  --border: #253a40;
+  --danger: #ef6b6b;
+  --shadow: none;
+  --ring: 0 0 0 3px rgba(95, 211, 192, 0.28);
+  --logo-bg: #f3f7f5;           /* โลโก้สีเข้มต้องวางบนพื้นสว่างในโหมดมืด */
+  color-scheme: dark;
+}

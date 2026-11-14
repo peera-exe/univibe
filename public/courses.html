@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>วิชา - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container">
+    <div class="page-head"><h1>วิชา</h1><a class="btn btn-ghost btn-sm" href="/timetable.html">ตารางเรียนของฉัน</a></div>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-mine" aria-selected="true" type="button">วิชาของฉัน</button>
+      <button class="tab" role="tab" id="tab-find" aria-selected="false" type="button">ค้นหาวิชา</button>
+    </div>
+    <form id="find-form" class="find-form hidden" role="search">
+      <input type="search" id="find-q" placeholder="ค้นหาด้วยรหัสหรือชื่อวิชา" maxlength="100" aria-label="ค้นหาวิชา">
+      <select id="semester" aria-label="ภาคเรียน"></select>
+    </form>
+    <p id="message" class="alert" role="alert"></p>
+    <div id="course-list" class="group-grid"></div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/scheduleEditor.js"></script>
+  <script src="/js/pages/courses.js"></script>
+</body>
+</html>

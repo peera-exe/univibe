@@ -1,0 +1,34 @@
+[
+  {
+    "username": "admin",
+    "email": "admin@univibe.local",
+    "password": "Admin@1234",
+    "role": "admin",
+    "displayName": "ผู้ดูแลระบบ",
+    "realName": "ผู้ดูแลระบบ UniVibe"
+  },
+  {
+    "username": "teacher1",
+    "email": "teacher1@univibe.local",
+    "password": "Teacher@1234",
+    "role": "teacher",
+    "displayName": "อ.สมหญิง รักเรียน",
+    "realName": "สมหญิง รักเรียน",
+    "faculty": "คณะวิทยาศาสตร์",
+    "department": "ภาควิชาวิทยาการคอมพิวเตอร์",
+    "staffId": "T0001",
+    "approval": "approved",
+    "teaches": [
+      "CS101",
+      "MA101",
+      "EN201"
+    ]
+  },
+  {
+    "username": "somchai",
+    "email": "somchai@example.com",
+    "password": "Student@1234",
+    "role": "user",
+    "studentId": "660911001"
+  }
+]

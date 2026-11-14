@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>ค้นหา - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container">
+    <h1 id="title">ผลการค้นหา</h1>
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-users" aria-selected="true" type="button">ผู้ใช้</button>
+      <button class="tab" role="tab" id="tab-posts" aria-selected="false" type="button">โพสต์</button>
+    </div>
+    <div id="user-panel">
+      <div class="filters">
+        <label for="status-filter">สถานะ</label>
+        <select id="status-filter">
+          <option value="">ทั้งหมด</option>
+          <option value="student">นักศึกษา</option>
+          <option value="alumni">ศิษย์เก่า</option>
+          <option value="teacher">อาจารย์</option>
+        </select>
+      </div>
+      <div id="users" class="user-grid"></div>
+    </div>
+    <div id="post-panel" class="hidden"><div id="posts"></div></div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/imagePicker.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/postCard.js"></script>
+  <script src="/js/pages/search.js"></script>
+</body>
+</html>

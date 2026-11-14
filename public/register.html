@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>สมัครสมาชิก - UniVibe</title>
+</head>
+<body>
+  <header class="topbar">
+    <span class="logo-badge"><img src="/assets/logo-full.png" alt="UniVibe"></span>
+    <button class="btn btn-ghost btn-sm" type="button" data-theme-toggle>โหมดมืด</button>
+  </header>
+
+  <main class="auth-wrap">
+    <section class="card">
+      <h1>สมัครสมาชิก</h1>
+      <div class="tabs" role="tablist">
+        <button class="tab" role="tab" id="tab-student" aria-selected="true" type="button">นักศึกษา / ศิษย์เก่า</button>
+        <button class="tab" role="tab" id="tab-teacher" aria-selected="false" type="button">อาจารย์</button>
+      </div>
+
+      <form id="student-form" novalidate>
+        <p class="muted">ยืนยันตัวตนด้วยรหัสนักศึกษาและวันเกิดที่ตรงกับทะเบียนของมหาวิทยาลัย</p>
+        <div class="field">
+          <label for="s-studentId">รหัสนักศึกษา</label>
+          <input type="text" id="s-studentId" name="studentId" inputmode="numeric" maxlength="9" placeholder="เช่น 660911085" required>
+          <span class="hint">ตัวเลข 9 หลัก</span>
+        </div>
+        <div class="field">
+          <label for="s-birthDate">วันเกิด</label>
+          <input type="date" id="s-birthDate" name="birthDate" required>
+        </div>
+        <div class="field">
+          <label for="s-username">username</label>
+          <input type="text" id="s-username" name="username" autocomplete="username" maxlength="20" required>
+          <span class="hint">a-z, 0-9 หรือ _ ยาว 3–20 ตัว</span>
+        </div>
+        <div class="field">
+          <label for="s-email">อีเมล</label>
+          <input type="email" id="s-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="s-password">รหัสผ่าน</label>
+          <input type="password" id="s-password" name="password" autocomplete="new-password" required>
+          <span class="hint">อย่างน้อย 8 ตัวอักษร</span>
+        </div>
+        <div class="field">
+          <label for="s-confirm">ยืนยันรหัสผ่าน</label>
+          <input type="password" id="s-confirm" name="confirm" autocomplete="new-password" required>
+        </div>
+        <p id="student-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">สมัครสมาชิก</button>
+      </form>
+
+      <form id="teacher-form" class="hidden" novalidate>
+        <p class="muted">บัญชีอาจารย์ต้องรอแอดมินอนุมัติก่อนจึงเข้าสู่ระบบได้</p>
+        <div class="field">
+          <label for="t-fullName">ชื่อ-นามสกุล</label>
+          <input type="text" id="t-fullName" name="fullName" maxlength="80" required>
+        </div>
+        <div class="field">
+          <label for="t-faculty">คณะ</label>
+          <input type="text" id="t-faculty" name="faculty" maxlength="100" required>
+        </div>
+        <div class="field">
+          <label for="t-department">ภาควิชา</label>
+          <input type="text" id="t-department" name="department" maxlength="100" required>
+        </div>
+        <div class="field">
+          <label for="t-staffId">รหัสบุคลากร</label>
+          <input type="text" id="t-staffId" name="staffId" maxlength="20" required>
+        </div>
+        <div class="field">
+          <label for="t-username">username</label>
+          <input type="text" id="t-username" name="username" autocomplete="username" maxlength="20" required>
+          <span class="hint">a-z, 0-9 หรือ _ ยาว 3–20 ตัว</span>
+        </div>
+        <div class="field">
+          <label for="t-email">อีเมล</label>
+          <input type="email" id="t-email" name="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="t-password">รหัสผ่าน</label>
+          <input type="password" id="t-password" name="password" autocomplete="new-password" required>
+          <span class="hint">อย่างน้อย 8 ตัวอักษร</span>
+        </div>
+        <div class="field">
+          <label for="t-confirm">ยืนยันรหัสผ่าน</label>
+          <input type="password" id="t-confirm" name="confirm" autocomplete="new-password" required>
+        </div>
+        <p id="teacher-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">ส่งคำขอเป็นอาจารย์</button>
+      </form>
+
+      <div class="form-links">
+        <a href="/login.html">มีบัญชีแล้ว? เข้าสู่ระบบ</a>
+      </div>
+    </section>
+  </main>
+
+  <script src="/js/common/api.js"></script>
+  <script src="/js/pages/register.js"></script>
+</body>
+</html>

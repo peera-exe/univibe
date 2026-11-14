@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>ตั้งค่า - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container">
+    <h1>ตั้งค่าบัญชี</h1>
+    <section class="card">
+      <h2>โปรไฟล์</h2>
+      <form id="profile-form" novalidate>
+        <div class="settings-images">
+          <div>
+            <div class="muted small">รูปโปรไฟล์</div>
+            <div id="avatar-preview"></div>
+            <input type="file" id="avatar-file" accept="image/jpeg,image/png,image/webp">
+          </div>
+          <div>
+            <div class="muted small">รูปปก</div>
+            <div id="cover-preview" class="cover-preview"></div>
+            <input type="file" id="cover-file" accept="image/jpeg,image/png,image/webp">
+          </div>
+        </div>
+        <div class="field">
+          <label for="displayName">ชื่อที่แสดง</label>
+          <input type="text" id="displayName" name="displayName" maxlength="60" readonly aria-describedby="displayName-hint">
+          <span class="hint" id="displayName-hint">ชื่อมาจากทะเบียนมหาวิทยาลัย เปลี่ยนเองไม่ได้</span>
+        </div>
+        <div class="field">
+          <label for="username">Username</label>
+          <div class="input-prefix"><span aria-hidden="true">@</span>
+            <input type="text" id="username" name="username" maxlength="20" autocomplete="off" autocapitalize="none" spellcheck="false" required></div>
+          <span class="hint">a–z, 0–9 หรือ _ ยาว 3–20 ตัว · คนอื่นใช้ username นี้ค้นหาคุณได้ · เปลี่ยนได้ทุก 14 วัน</span>
+        </div>
+        <div class="field">
+          <label for="bio">ประวัติย่อ</label>
+          <textarea id="bio" name="bio" rows="3" maxlength="300"></textarea>
+        </div>
+        <div class="field">
+          <span class="hint">ชื่อจริง รหัสนักศึกษา และสถานะ มาจากทะเบียนมหาวิทยาลัย แก้เองไม่ได้</span>
+          <div id="registry-info" class="muted"></div>
+        </div>
+        <p id="profile-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">บันทึกโปรไฟล์</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>ความเป็นส่วนตัว</h2>
+      <form id="privacy-form" novalidate>
+        <div class="field">
+          <label for="connectionsVisibility">ใครดูรายชื่อผู้ติดตามและกำลังติดตามของฉันได้</label>
+          <select id="connectionsVisibility">
+            <option value="everyone">ทุกคน</option>
+            <option value="followers">เฉพาะคนที่ติดตามฉัน</option>
+            <option value="only_me">เฉพาะฉันคนเดียว</option>
+          </select>
+          <span class="hint">จำนวนผู้ติดตามยังแสดงบนโปรไฟล์ตามปกติ แต่รายชื่อจะเห็นเฉพาะคนที่คุณอนุญาต</span>
+        </div>
+        <div class="field">
+          <label for="allowMessagesFrom">ใครส่งข้อความหาฉันได้</label>
+          <select id="allowMessagesFrom">
+            <option value="everyone">ทุกคน</option>
+            <option value="following">เฉพาะคนที่ฉันติดตาม</option>
+            <option value="nobody">ไม่รับข้อความจากใครเลย</option>
+          </select>
+          <span class="hint">แชทกลุ่มวิชาและกลุ่มที่คุณเป็นสมาชิกไม่ได้รับผลกระทบ</span>
+        </div>
+        <label class="check-row"><input type="checkbox" id="showFacultyMajor"> <span>แสดงคณะและสาขา/ภาควิชาบนโปรไฟล์ของฉัน</span></label>
+        <label class="check-row"><input type="checkbox" id="showOnlineStatus"> <span>แสดงสถานะออนไลน์ให้คนที่แชทกับฉันเห็น</span></label>
+        <p id="privacy-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">บันทึกความเป็นส่วนตัว</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>เปลี่ยนรหัสผ่าน</h2>
+      <form id="password-form" novalidate>
+        <div class="field"><label for="oldPassword">รหัสผ่านปัจจุบัน</label>
+          <input type="password" id="oldPassword" autocomplete="current-password" required></div>
+        <div class="field"><label for="newPassword">รหัสผ่านใหม่</label>
+          <input type="password" id="newPassword" autocomplete="new-password" required>
+          <span class="hint">อย่างน้อย 8 ตัวอักษร</span></div>
+        <div class="field"><label for="confirmPassword">ยืนยันรหัสผ่านใหม่</label>
+          <input type="password" id="confirmPassword" autocomplete="new-password" required></div>
+        <p id="password-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">เปลี่ยนรหัสผ่าน</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>เปลี่ยนอีเมล</h2>
+      <form id="email-form" novalidate>
+        <div class="field"><label for="email">อีเมลใหม่</label>
+          <input type="email" id="email" autocomplete="email" required></div>
+        <div class="field"><label for="emailPassword">รหัสผ่านปัจจุบัน (เพื่อยืนยัน)</label>
+          <input type="password" id="emailPassword" autocomplete="current-password" required></div>
+        <p id="email-message" class="alert" role="alert"></p>
+        <button class="btn" type="submit">เปลี่ยนอีเมล</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>ผู้ใช้ที่ฉันบล็อก</h2>
+      <p class="muted small">ผู้ที่ถูกบล็อกจะส่งข้อความหรือติดตามคุณไม่ได้</p>
+      <div id="block-list"></div>
+    </section>
+
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/imagePicker.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/postCard.js"></script>
+  <script src="/js/pages/settings.js"></script>
+</body>
+</html>

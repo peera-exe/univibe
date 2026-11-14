@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>แชท - UniVibe</title>
+</head>
+<body class="page-chat">
+  <header id="topbar"></header>
+  <main class="chat-container">
+    <div class="chat-layout" id="chat-layout">
+      <aside class="chat-list-pane">
+        <div class="chat-list-head">
+          <h1>แชท</h1>
+          <button class="btn btn-sm" id="new-chat" type="button">แชทใหม่</button>
+        </div>
+        <div id="new-chat-box" class="new-chat-box hidden">
+          <input type="search" id="new-chat-q" placeholder="ค้นหาชื่อหรือ username" maxlength="100" aria-label="ค้นหาผู้ใช้เพื่อเริ่มแชท">
+          <div id="new-chat-results"></div>
+        </div>
+        <div class="conv-filter"><input type="search" id="conv-filter" placeholder="ค้นหาห้องแชท" maxlength="100" aria-label="ค้นหาห้องแชท"></div>
+        <div id="conv-list" class="conv-list"></div>
+      </aside>
+      <section class="chat-thread-pane" id="thread-pane">
+        <div class="chat-empty"><div class="chat-empty-icon" aria-hidden="true">💬</div><strong>ข้อความของคุณ</strong><span class="muted">เลือกห้องแชททางซ้าย หรือกด "แชทใหม่" เพื่อเริ่มคุยกับเพื่อน</span></div>
+      </section>
+    </div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/imagePicker.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/postCard.js"></script>
+  <script src="/js/pages/chat.js"></script>
+</body>
+</html>

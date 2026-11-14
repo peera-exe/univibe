@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>กลุ่ม - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container">
+    <div class="page-head">
+      <h1>กลุ่ม</h1>
+      <button class="btn btn-sm" id="toggle-create" type="button">สร้างกลุ่ม</button>
+    </div>
+
+    <form id="create-form" class="card hidden" novalidate>
+      <h2>สร้างกลุ่มใหม่</h2>
+      <div class="field"><label for="g-name">ชื่อกลุ่ม</label>
+        <input type="text" id="g-name" name="name" maxlength="100" required></div>
+      <div class="field"><label for="g-desc">คำอธิบาย</label>
+        <textarea id="g-desc" name="description" rows="2" maxlength="500"></textarea></div>
+      <div class="field"><label for="g-privacy">ชนิดกลุ่ม</label>
+        <select id="g-privacy" name="privacy">
+          <option value="open">เปิด — ใครก็เข้าร่วมได้ทันที</option>
+          <option value="closed">ปิด — ต้องขออนุมัติจากเจ้าของกลุ่ม</option>
+        </select></div>
+      <div class="field"><label for="g-image">รูปกลุ่ม (ไม่บังคับ)</label>
+        <input type="file" id="g-image" accept="image/jpeg,image/png,image/webp"></div>
+      <p id="create-message" class="alert" role="alert"></p>
+      <div class="row-actions">
+        <button class="btn btn-sm" type="submit">สร้างกลุ่ม</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="cancel-create">ยกเลิก</button>
+      </div>
+    </form>
+
+    <div class="tabs" role="tablist">
+      <button class="tab" role="tab" id="tab-mine" aria-selected="true" type="button">กลุ่มของฉัน</button>
+      <button class="tab" role="tab" id="tab-find" aria-selected="false" type="button">ค้นหากลุ่ม</button>
+    </div>
+    <form id="find-form" class="find-form hidden" role="search">
+      <input type="search" id="find-q" placeholder="ค้นหาชื่อกลุ่ม" maxlength="100" aria-label="ค้นหากลุ่ม">
+    </form>
+    <p id="message" class="alert" role="alert"></p>
+    <div id="group-list" class="group-grid"></div>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/imagePicker.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/postCard.js"></script>
+  <script src="/js/pages/groups.js"></script>
+</body>
+</html>

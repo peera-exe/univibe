@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniVibe</title>
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <span class="logo-badge"><img src="/assets/logo-full.png" alt="UniVibe"></span>
+    <button class="btn btn-ghost" type="button" data-theme-toggle>โหมดมืด</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h1>UniVibe</h1>
+      <p class="muted">เว็บชุมชนมหาวิทยาลัย — หน้าตรวจสถานะระบบ</p>
+      <ul class="status-list">
+        <li>เซิร์ฟเวอร์: <span id="server-status" class="muted">กำลังตรวจสอบ...</span></li>
+        <li>ฐานข้อมูล MongoDB: <span id="db-status" class="muted">กำลังตรวจสอบ...</span></li>
+      </ul>
+    </section>
+  </main>
+
+  <script>
+    const serverEl = document.querySelector('#server-status');
+    const dbEl = document.querySelector('#db-status');
+
+    function setStatus(el, ok, text) {
+      el.textContent = text;
+      el.className = ok ? 'ok' : 'bad';
+    }
+
+    fetch('/api/health')
+      .then((res) => res.json())
+      .then((data) => {
+        setStatus(serverEl, true, 'ทำงานปกติ');
+        setStatus(dbEl, data.db, data.db ? 'เชื่อมต่อแล้ว' : 'ยังไม่เชื่อมต่อ');
+      })
+      .catch(() => {
+        setStatus(serverEl, false, 'เชื่อมต่อเซิร์ฟเวอร์ไม่ได้');
+        setStatus(dbEl, false, 'ไม่ทราบสถานะ');
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="stylesheet" href="/css/theme.css">
+  <link rel="stylesheet" href="/css/base.css">
+  <script src="/js/common/theme.js"></script>
+  <title>กลุ่ม - UniVibe</title>
+</head>
+<body>
+  <header id="topbar"></header>
+  <main class="container">
+    <p id="message" class="alert" role="alert"></p>
+    <section id="group-card" class="card"></section>
+    <form id="edit-form" class="card hidden" novalidate>
+      <h2>แก้ไขกลุ่ม</h2>
+      <div class="field"><label for="e-name">ชื่อกลุ่ม</label>
+        <input type="text" id="e-name" name="name" maxlength="100" required></div>
+      <div class="field"><label for="e-desc">คำอธิบาย</label>
+        <textarea id="e-desc" name="description" rows="2" maxlength="500"></textarea></div>
+      <div class="field"><label for="e-privacy">ชนิดกลุ่ม</label>
+        <select id="e-privacy" name="privacy">
+          <option value="open">เปิด — ใครก็เข้าร่วมได้ทันที</option>
+          <option value="closed">ปิด — ต้องขออนุมัติจากเจ้าของกลุ่ม</option>
+        </select></div>
+      <div class="field"><label for="e-image">เปลี่ยนรูปกลุ่ม</label>
+        <input type="file" id="e-image" accept="image/jpeg,image/png,image/webp"></div>
+      <p id="edit-message" class="alert" role="alert"></p>
+      <div class="row-actions">
+        <button class="btn btn-sm" type="submit">บันทึก</button>
+        <button class="btn btn-ghost btn-sm" type="button" id="cancel-edit">ยกเลิก</button>
+      </div>
+    </form>
+    <section id="requests-card" class="card hidden">
+      <h2>คำขอเข้าร่วม</h2>
+      <div id="request-list"></div>
+    </section>
+    <section id="members-card" class="card hidden">
+      <h2>สมาชิก</h2>
+      <div id="member-list"></div>
+    </section>
+    <p><a href="/groups.html">← กลับไปรายการกลุ่ม</a></p>
+  </main>
+  <script src="/js/common/api.js"></script>
+  <script src="/js/common/ui.js"></script>
+  <script src="/js/common/imagePicker.js"></script>
+  <script src="/js/common/layout.js"></script>
+  <script src="/js/common/notifications.js"></script>
+  <script src="/js/common/postCard.js"></script>
+  <script src="/js/pages/group.js"></script>
+</body>
+</html>
